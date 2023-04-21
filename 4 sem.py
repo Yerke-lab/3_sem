@@ -116,7 +116,8 @@ class RBTree():
             if k == self.root:                            
                 break
         self.root.color = 0
-    
+
+#Балансировка дерева после удаления    
     def fixDelete(self, x):
         while x != self.root and x.color == 0:           
             if x == x.parent.left :                       
